@@ -94,8 +94,8 @@ export function ProjectsSection() {
               {/* Left side - Image */}
               <div className="relative aspect-video lg:aspect-auto overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
-                  alt="NexusAI Platform"
+                  src="/ai-chat.png?height=600&width=800"
+                  alt="miracle tsaka chat"
                   width={800}
                   height={600}
                   className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
@@ -108,7 +108,7 @@ export function ProjectsSection() {
                     <span className="text-[10px] text-cyan-300">Featured</span>
                   </div>
                   <div className="bg-black/80 backdrop-blur-sm border border-purple-500/30 rounded-full px-2 py-1">
-                    <span className="text-[10px] text-purple-300">AI Platform</span>
+                    <span className="text-[10px] text-purple-300">Advanced AI</span>
                   </div>
                 </div>
               </div>
@@ -116,18 +116,17 @@ export function ProjectsSection() {
               {/* Right side - Content */}
               <div className="p-8 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-2">NexusAI Platform</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">Realtime Voice Chat</h3>
                   <p className="text-xs text-gray-300 leading-relaxed mb-4">
-                    A revolutionary AI-powered platform that enables businesses to create, deploy, and manage
-                    intelligent applications without extensive technical expertise. NexusAI bridges the gap between
-                    advanced machine learning capabilities and practical business applications.
+                  This app uses AI to provide information about Miracle Tsaka through natural voice conversations, enabling users to interact seamlessly using speech. 
+                  It has realistic voice capabilities.
                   </p>
 
                   {/* Tech stack */}
                   <div className="mb-6">
                     <p className="text-[10px] text-gray-500 mb-2">TECHNOLOGIES</p>
                     <div className="flex flex-wrap gap-2">
-                      {["React", "Node.js", "TensorFlow", "GraphQL", "AWS", "Docker"].map((tech) => (
+                      {["React", "Node.js", "ElevensLab", "GEMINI", "API"].map((tech) => (
                         <span key={tech} className="text-[10px] px-2 py-1 rounded-full bg-gray-800 text-gray-400">
                           {tech}
                         </span>
@@ -138,10 +137,9 @@ export function ProjectsSection() {
                   {/* Key features */}
                   <div className="grid grid-cols-2 gap-3 mb-6">
                     {[
-                      "Intuitive AI Model Builder",
-                      "Real-time Analytics Dashboard",
-                      "Multi-platform Deployment",
-                      "Enterprise-grade Security",
+                      "Intuitive AI Model",
+                      "Real-time Conversation",
+                      "Realistic voice",
                     ].map((feature, index) => (
                       <div key={index} className="flex items-center space-x-1">
                         <div className="w-1 h-1 rounded-full bg-cyan-500"></div>
@@ -154,14 +152,8 @@ export function ProjectsSection() {
                 {/* Actions */}
                 <div className="flex items-center space-x-4">
                   <Link
-                    href="#"
-                    className="inline-flex items-center text-xs border border-cyan-500/30 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 px-4 py-2 rounded-full transition-all duration-300 group"
-                  >
-                    View Case Study
-                    <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                  <Link
-                    href="#"
+                    href="https://ai-voice-chat-eight.vercel.app/"
+                    target="__blank"
                     className="inline-flex items-center text-xs text-gray-400 hover:text-cyan-300 transition-colors"
                   >
                     <ExternalLink className="w-3 h-3 mr-1" />
@@ -177,59 +169,18 @@ export function ProjectsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
-              title: "Quantum UI Framework",
+              title: "XTREME-REGION STARTUP",
               description:
-                "A next-generation UI component library built for the future of web development, featuring atomic design principles and advanced animation capabilities.",
-              image: "/placeholder.svg?height=400&width=600",
-              category: "UI/UX Design",
-              tech: ["React", "TypeScript", "Framer Motion"],
+                `I developed the fontend and intergated ai functionalities to this startup web app.Extreme Region empowers organizations with AI-driven video conferencing and educational tools, enabling seamless 
+                online meetings and dynamic lesson creation to enhance collaboration and knowledge sharing. The platform also allows 
+                teachers to create dedicated channels where users can subscribe, having realtime voice chat with ai for learning purpose, offering a powerful way to monetize expertise and build 
+                an engaged learning community. Its not deployed yet and its in development phase`,
+              image: "/x-region.png?height=400&width=600",
+              category: "Commmunication",
+              tech: ["Nextjs", "TypeScript", "GEMINI", "ElevenLabs","More"],
               color: "purple",
             },
-            {
-              title: "EcoTrack Mobile App",
-              description:
-                "A sustainability-focused mobile application that helps users track and reduce their carbon footprint through personalized recommendations and community challenges.",
-              image: "/placeholder.svg?height=400&width=600",
-              category: "Mobile Apps",
-              tech: ["React Native", "Firebase", "Node.js"],
-              color: "green",
-            },
-            {
-              title: "Immersive VR Experience",
-              description:
-                "A virtual reality experience that transports users to futuristic environments, featuring interactive elements and spatial audio for complete immersion.",
-              image: "/placeholder.svg?height=400&width=600",
-              category: "3D & Interactive",
-              tech: ["Three.js", "WebXR", "GLSL"],
-              color: "blue",
-            },
-            {
-              title: "Predictive Analytics Dashboard",
-              description:
-                "An enterprise-grade analytics platform that leverages machine learning to provide predictive insights and actionable business intelligence.",
-              image: "/placeholder.svg?height=400&width=600",
-              category: "AI Solutions",
-              tech: ["Python", "TensorFlow", "D3.js"],
-              color: "cyan",
-            },
-            {
-              title: "Blockchain Marketplace",
-              description:
-                "A decentralized marketplace built on blockchain technology, enabling secure and transparent transactions for digital assets and services.",
-              image: "/placeholder.svg?height=400&width=600",
-              category: "Web Development",
-              tech: ["Solidity", "Web3.js", "Next.js"],
-              color: "purple",
-            },
-            {
-              title: "Smart Home Ecosystem",
-              description:
-                "An integrated IoT platform that connects and orchestrates smart home devices through an intuitive interface and advanced automation capabilities.",
-              image: "/placeholder.svg?height=400&width=600",
-              category: "AI Solutions",
-              tech: ["IoT", "Node.js", "React"],
-              color: "blue",
-            },
+           
           ].map((project, index) => (
             <div
               key={index}
@@ -266,7 +217,7 @@ export function ProjectsSection() {
               {/* Project content */}
               <div className="p-6">
                 <h3 className="text-sm font-semibold text-white mb-2">{project.title}</h3>
-                <p className="text-[10px] text-gray-400 leading-relaxed mb-4 line-clamp-3">{project.description}</p>
+                <p className="text-[10px] text-gray-400 leading-relaxed mb-4 ">{project.description}</p>
 
                 {/* Tech stack */}
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -278,38 +229,13 @@ export function ProjectsSection() {
                 </div>
 
                 {/* Actions */}
-                <div className="flex items-center justify-between">
-                  <Link
-                    href="#"
-                    className={`text-[10px] text-${project.color}-400 hover:text-${project.color}-300 flex items-center transition-colors`}
-                  >
-                    View Details
-                    <ChevronRight className="w-3 h-3 ml-1" />
-                  </Link>
-                  <div className="flex space-x-2">
-                    <a href="#" className="text-gray-500 hover:text-white transition-colors">
-                      <Github className="w-3 h-3" />
-                    </a>
-                    <a href="#" className="text-gray-500 hover:text-white transition-colors">
-                      <ExternalLink className="w-3 h-3" />
-                    </a>
-                  </div>
-                </div>
+                
               </div>
             </div>
           ))}
         </div>
 
-        {/* More projects CTA */}
-        <div className="text-center mt-12">
-          <Link
-            href="#"
-            className="inline-flex items-center text-xs border border-cyan-500/30 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 px-6 py-3 rounded-full transition-all duration-300 group"
-          >
-            View All Projects
-            <ArrowRight className="w-3 h-3 ml-2 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </div>
+       
       </div>
     </section>
   )

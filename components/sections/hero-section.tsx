@@ -153,7 +153,7 @@ export function HeroSection() {
           {/* Profile image */}
           <div className="relative z-10 w-56 h-56 rounded-full overflow-hidden border-2 border-purple-500/50 shadow-[0_0_15px_rgba(139,92,246,0.3)]">
             <Image
-              src="/placeholder.svg?height=400&width=400"
+              src="/mint.jpg?height=400&width=400"
               alt="Miracle Tsaka"
               width={224}
               height={224}

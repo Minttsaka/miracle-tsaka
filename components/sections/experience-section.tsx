@@ -247,18 +247,13 @@ export function ExperienceSection() {
               <div className="space-y-6">
                 {[
                   {
-                    degree: "Master of Science in Human-Computer Interaction",
-                    institution: "Stanford University",
-                    period: "2013 - 2015",
+                    degree: "Education (Business studies)",
+                    institution: "MUBAS",
+                    period: "2021 - 2025",
                     description:
-                      "Focused on advanced user interface design, cognitive psychology, and emerging technologies.",
+                      "System analysis, organization behaviour, and coding.",
                   },
-                  {
-                    degree: "Bachelor of Science in Computer Science",
-                    institution: "University of Toronto",
-                    period: "2009 - 2013",
-                    description: "Specialized in software engineering and interactive media. Graduated with honors.",
-                  },
+                  
                 ].map((edu, index) => (
                   <div key={index} className="border-l-2 border-blue-500/30 pl-4">
                     <div className="flex items-center space-x-2 mb-1">
@@ -283,29 +278,12 @@ export function ExperienceSection() {
               <div className="space-y-4">
                 {[
                   {
-                    name: "Advanced AI Engineering",
-                    issuer: "Google Cloud",
-                    year: "2023",
-                    credential: "GCP-AI-2023",
+                    name: "Certificate in coding and programming",
+                    issuer: "SAMSUNG",
+                    year: "2024-2025",
+                    credential: "Dinstinction",
                   },
-                  {
-                    name: "AWS Solutions Architect",
-                    issuer: "Amazon Web Services",
-                    year: "2022",
-                    credential: "AWS-SA-2022",
-                  },
-                  {
-                    name: "Professional UX Designer",
-                    issuer: "Interaction Design Foundation",
-                    year: "2020",
-                    credential: "IDF-UXD-2020",
-                  },
-                  {
-                    name: "Frontend Performance Optimization",
-                    issuer: "Frontend Masters",
-                    year: "2019",
-                    credential: "FM-FPO-2019",
-                  },
+
                 ].map((cert, index) => (
                   <div
                     key={index}

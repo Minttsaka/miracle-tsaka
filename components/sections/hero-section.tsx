@@ -79,7 +79,7 @@ export function HeroSection() {
           </div>
 
           {/* Name */}
-          <h1 className="text-5xl sm:text-7xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-500 to-purple-400 animate-gradient">
+          <h1 className="text-5xl uppercase sm:text-7xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-blue-500 to-purple-400 animate-gradient">
             Miracle Tsaka
           </h1>
 

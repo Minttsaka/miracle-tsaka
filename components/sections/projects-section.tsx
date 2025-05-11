@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, ChevronRight, ExternalLink, Github, Filter, Eye } from "lucide-react"
+import { ExternalLink,  Filter, Eye } from "lucide-react"
 
 export function ProjectsSection() {
   return (

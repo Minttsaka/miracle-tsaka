@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronRight, Code, Globe, Briefcase, Lightbulb, Target, Award, Rocket, ArrowDown } from "lucide-react"
+import { ChevronRight, Code, Globe, Lightbulb, Target, Award, Rocket, ArrowDown } from "lucide-react"
 
 export function AboutSection() {
   return (
@@ -97,7 +97,7 @@ export function AboutSection() {
               <p className="text-xs leading-relaxed text-gray-300">
                 I am Miracle Tsaka, a digital architect and future engineer with a passion for creating innovative
                 solutions that bridge the gap between technology and human experience. With over 2 years of experience
-                in the tech industry, I've dedicated my career to pushing the boundaries of what's possible in digital
+                in the tech industry, Ive dedicated my career to pushing the boundaries of whats possible in digital
                 design and development.
               </p>
               <p className="text-xs leading-relaxed text-gray-300 mt-3">

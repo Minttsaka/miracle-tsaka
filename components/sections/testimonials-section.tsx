@@ -201,7 +201,7 @@ export function TestimonialsSection() {
                   {/* Right - Testimonial */}
                   <div className="md:col-span-3">
                     <blockquote className="text-xs leading-relaxed text-gray-300 italic">
-                      "{testimonials[activeIndex].quote}"
+                      {testimonials[activeIndex].quote}
                     </blockquote>
                   </div>
                 </div>
@@ -258,7 +258,7 @@ export function TestimonialsSection() {
               >
                 {/* Quote */}
                 <blockquote className="text-[10px] leading-relaxed text-gray-400 italic mb-4 line-clamp-4">
-                  "{testimonial.quote}"
+                  {testimonial.quote}
                 </blockquote>
 
                 {/* Client info */}

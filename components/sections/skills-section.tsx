@@ -2,21 +2,15 @@ import Link from "next/link"
 import {
   ArrowRight,
   Server,
-  Layers,
   PenTool,
   Brain,
   Database,
   Cloud,
   Monitor,
-  Smartphone,
   Figma,
   GitBranch,
   Terminal,
-  Sparkles,
-  Code,
   Globe,
-  Zap,
-  Cpu,
 } from "lucide-react"
 
 export function SkillsSection() {

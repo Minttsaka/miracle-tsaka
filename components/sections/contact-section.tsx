@@ -101,7 +101,7 @@ export function ContactSection() {
             Get In Touch
           </h2>
           <p className="mt-2 text-xs text-gray-400 max-w-md mx-auto">
-            Let's discuss how we can collaborate to bring your vision to life
+            Lets discuss how we can collaborate to bring your vision to life
           </p>
         </div>
 
@@ -229,7 +229,7 @@ export function ContactSection() {
                 </div>
 
                 <p className="text-[10px] text-gray-300 leading-relaxed">
-                  I'm currently accepting new projects and collaborations. My availability is limited to 2 new projects
+                  Im currently accepting new projects and collaborations. My availability is limited to 2 new projects
                   per month to ensure the highest quality of work and attention to detail.
                 </p>
 

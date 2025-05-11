@@ -347,7 +347,7 @@ export function ExperienceSection() {
               href="#contact"
               className="inline-flex items-center text-xs text-gray-400 hover:text-purple-300 transition-colors"
             >
-              Let's discuss your project
+              Lets discuss your project
               <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

@@ -74,70 +74,84 @@ export function ExperienceSection() {
           <div className="space-y-12 md:space-y-0">
             {[
               {
-                period: "2022 - Present",
-                role: "Lead Digital Architect",
-                company: "FutureVision Technologies",
-                location: "San Francisco, CA",
+                period: "2021 - 2022",
+                role: "Self-Taught Developer",
+                company: "Independent",
+                location: "Blantyre, Malawi",
                 description:
-                  "Leading a team of designers and developers to create next-generation digital experiences for enterprise clients. Spearheading the development of AI-powered interfaces and immersive technologies that redefine human-computer interaction.",
+                  "Began my coding journey with a deep curiosity and commitment to mastering the fundamentals of web development. Rapidly progressed from basic HTML/CSS to building dynamic websites and full-stack applications.",
                 achievements: [
-                  "Architected an award-winning AI platform that increased client productivity by 35%",
-                  "Led the development of a revolutionary VR training system for medical professionals",
-                  "Established a design system that reduced development time by 40%",
+                  "Learned modern web development tools and best practices",
+                  "Built foundational projects to apply and solidify my skills",
                 ],
-                technologies: ["React", "Next.js", "AI/ML", "WebXR", "Three.js"],
-                color: "purple",
-                logo: "/placeholder.svg?height=80&width=80",
+                technologies: ["HTML", "CSS", "JavaScript", "React"],
+                color: "gray",
+                logo: "/mint.jpg?height=80&width=80",
               },
               {
-                period: "2019 - 2022",
-                role: "Senior Frontend Engineer",
-                company: "Quantum Innovations",
-                location: "New York, NY",
+                period: "2022 - 2023",
+                role: "Full Stack Developer",
+                company: "Independent Projects",
+                location: "Blantyre, Malawi",
                 description:
-                  "Developed cutting-edge web applications with a focus on performance, accessibility, and user experience. Created innovative UI components and interactive visualizations for data-heavy applications.",
+                  "Mastered full stack web development and started building real-world projects, ranging from dynamic websites to backend APIs. Established a personal portfolio showcasing my technical growth.",
                 achievements: [
-                  "Rebuilt the company's flagship product, improving performance by 60%",
-                  "Implemented advanced animations and micro-interactions that increased user engagement",
-                  "Mentored junior developers and established frontend best practices",
+                  "Developed several personal and client-facing web apps",
+                  "Gained expertise in frameworks like Next.js and tools like Docker",
                 ],
-                technologies: ["Vue.js", "TypeScript", "D3.js", "GraphQL", "Tailwind CSS"],
+                technologies: ["Node.js", "Next.js", "TypeScript", "Docker"],
                 color: "blue",
-                logo: "/placeholder.svg?height=80&width=80",
+                logo: "/mint.jpg?height=80&width=80",
               },
               {
-                period: "2017 - 2019",
-                role: "UI/UX Designer & Developer",
-                company: "NeoSphere Digital",
-                location: "Berlin, Germany",
+                period: "2023 - 2024",
+                role: "AI Developer",
+                company: "Independent + OpenAI Tools",
+                location: "Malawi",
                 description:
-                  "Bridged the gap between design and development by creating pixel-perfect interfaces and implementing them with clean, efficient code. Collaborated closely with clients to translate their vision into functional digital products.",
+                  "Ventured into the field of AI, focusing on practical applications using OpenAI and related tools. Built interactive AI-powered apps like chatbots, voice interfaces, and quiz platforms to explore AI-human interaction.",
                 achievements: [
-                  "Designed and developed 15+ websites and applications for clients across various industries",
-                  "Created a modular component library that streamlined the design-to-development workflow",
-                  "Received the German Design Award for an innovative e-commerce interface",
+                  "Created AI chatbot with image analysis capabilities",
+                  "Launched AI Voice Conversation App for real-time voice interactions",
+                  "Built AI Quiz Master App to support interactive learning environments",
                 ],
-                technologies: ["Figma", "React", "SCSS", "JavaScript", "Framer Motion"],
-                color: "cyan",
-                logo: "/placeholder.svg?height=80&width=80",
-              },
-              {
-                period: "2015 - 2017",
-                role: "Frontend Developer",
-                company: "TechStart Solutions",
-                location: "Toronto, Canada",
-                description:
-                  "Developed responsive websites and web applications for startups and small businesses. Focused on creating clean, maintainable code and ensuring cross-browser compatibility and optimal performance.",
-                achievements: [
-                  "Built and launched 20+ websites for clients in various industries",
-                  "Implemented responsive design principles that improved mobile conversion rates by 25%",
-                  "Optimized website performance, achieving 90+ PageSpeed scores",
-                ],
-                technologies: ["HTML5", "CSS3", "JavaScript", "jQuery", "WordPress"],
+                technologies: ["OpenAI", "Python", "TensorFlow", "OpenCV"],
                 color: "green",
-                logo: "/placeholder.svg?height=80&width=80",
+                logo: "/mint.jpg?height=80&width=80",
               },
-            ].map((experience, index) => (
+              {
+                period: "2024",
+                role: "AI & ML Engineer (Trainee)",
+                company: "Samsung Innovation Campus",
+                location: "Malawi",
+                description:
+                  "Focused on machine learning, advanced data analysis, and AI technologies as part of the Samsung Innovation Campus program. Excelled in applying theoretical knowledge to real-world problems and projects.",
+                achievements: [
+                  "Gained hands-on experience with ML models and AI frameworks",
+                  "Certified with distinction and awarded Top Performer recognition",
+                ],
+                technologies: ["Machine Learning", "Python", "Pandas", "Scikit-Learn"],
+                color: "purple",
+                logo: "/mint.jpg?height=80&width=80",
+              },
+              {
+                period: "2025 - Present",
+                role: "Founder & AI Product Lead",
+                company: "Extreme Region",
+                location: "Malawi",
+                description:
+                  "Co-founded Extreme Region, an AI-powered educational and video conferencing platform aimed at transforming online learning and collaboration in Africa. Spearheading the development of scalable AI solutions and product vision.",
+                achievements: [
+                  "Develop Extreme Region with AI-driven video meetings and lesson creation",
+                  "Enabled monetization for educators via user-subscription channels",
+                  "Integrated meeting scheduling, AI chatbots, and real-time voice features",
+                ],
+                technologies: ["AI/ML", "OpenAI", "AWS", "Next.js", "WebRTC"],
+                color: "orange",
+                logo: "/mint.jpg?height=80&width=80",
+              },
+            ]
+            .map((experience, index) => (
               <div key={index} className={`relative md:flex ${index % 2 === 0 ? "" : "md:flex-row-reverse"}`}>
                 {/* Timeline dot */}
                 <div className="hidden md:block absolute left-1/2 top-0 transform -translate-x-1/2 w-4 h-4 rounded-full border-2 border-purple-500 bg-black"></div>
@@ -167,7 +181,7 @@ export function ExperienceSection() {
                         </div>
                         <div className="w-12 h-12 rounded-lg overflow-hidden border border-gray-700">
                           <Image
-                            src={experience.logo || "/placeholder.svg"}
+                            src={experience.logo || "/mint.jpg"}
                             alt={`${experience.company} logo`}
                             width={48}
                             height={48}

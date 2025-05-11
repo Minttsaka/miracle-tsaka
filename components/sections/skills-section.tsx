@@ -259,7 +259,7 @@ export function SkillsSection() {
 
                   <div className="space-y-4">
                     {[
-                      { name: "TensorFlow / PyTorch", level: 85, color: "blue" },
+                      { name: "TensorFlow", level: 85, color: "blue" },
                       { name: "OpenAI", level: 88, color: "purple" },
                       { name: "Generative AI", level: 90, color: "purple" },
                       { name: "Data Analysis", level: 85, color: "blue" },

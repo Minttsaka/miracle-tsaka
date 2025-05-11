@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowUp, Github, Linkedin, Twitter, Instagram, Heart } from "lucide-react"
+import { ArrowUp, Github, Linkedin, Twitter, Instagram } from "lucide-react"
 
 export function FooterSection() {
   const currentYear = new Date().getFullYear()
@@ -26,7 +26,7 @@ export function FooterSection() {
               </h2>
             </Link>
             <p className="text-[10px] text-gray-400 leading-relaxed mb-4">
-              Crafting next-generation digital experiences that transcend conventional boundaries.
+              DREAMZ COME TRUE.
             </p>
             <div className="flex space-x-3">
               <a
@@ -67,79 +67,6 @@ export function FooterSection() {
               </a>
             </div>
           </div>
-
-          {/* Column 2 - Quick Links */}
-          <div>
-            <h3 className="text-xs font-semibold text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              {[
-                { label: "Home", href: "#" },
-                { label: "About", href: "#about" },
-                { label: "Skills", href: "#skills" },
-                { label: "Projects", href: "#projects" },
-                { label: "Experience", href: "#experience" },
-                { label: "Contact", href: "#contact" },
-              ].map((link, index) => (
-                <li key={index}>
-                  <Link href={link.href} className="text-[10px] text-gray-400 hover:text-purple-400 transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3 - Services */}
-          <div>
-            <h3 className="text-xs font-semibold text-white mb-4">Services</h3>
-            <ul className="space-y-2">
-              {[
-                { label: "UI/UX Design", href: "#" },
-                { label: "Web Development", href: "#" },
-                { label: "Mobile Applications", href: "#" },
-                { label: "AI Integration", href: "#" },
-                { label: "Digital Strategy", href: "#" },
-                { label: "Interactive Experiences", href: "#" },
-              ].map((service, index) => (
-                <li key={index}>
-                  <Link href={service.href} className="text-[10px] text-gray-400 hover:text-blue-400 transition-colors">
-                    {service.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 4 - Contact */}
-          <div>
-            <h3 className="text-xs font-semibold text-white mb-4">Contact</h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="mailto:hello@miracletsaka.com"
-                  className="text-[10px] text-gray-400 hover:text-cyan-400 transition-colors"
-                >
-                  hello@miracletsaka.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:+11234567890" className="text-[10px] text-gray-400 hover:text-cyan-400 transition-colors">
-                  +1 (123) 456-7890
-                </a>
-              </li>
-              <li>
-                <span className="text-[10px] text-gray-400">San Francisco, CA</span>
-              </li>
-            </ul>
-            <div className="mt-4">
-              <Link
-                href="#contact"
-                className="inline-flex items-center text-[10px] border border-cyan-500/30 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 px-3 py-1.5 rounded-full transition-all duration-300"
-              >
-                Get in Touch
-              </Link>
-            </div>
-          </div>
         </div>
 
         {/* Bottom section */}
@@ -149,14 +76,8 @@ export function FooterSection() {
           </div>
 
           <div className="flex items-center space-x-6">
-            <Link href="/privacy" className="text-[10px] text-gray-500 hover:text-gray-400 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-[10px] text-gray-500 hover:text-gray-400 transition-colors">
-              Terms of Service
-            </Link>
             <div className="text-[10px] text-gray-500 flex items-center">
-              Made with <Heart className="w-3 h-3 text-red-500 mx-1" /> in San Francisco
+              MIRACLE TSAKA
             </div>
           </div>
         </div>

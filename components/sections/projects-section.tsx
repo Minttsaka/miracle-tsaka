@@ -176,10 +176,19 @@ export function ProjectsSection() {
                 teachers to create dedicated channels where users can subscribe, having realtime voice chat with ai for learning purpose, offering a powerful way to monetize expertise and build 
                 an engaged learning community. Its not deployed yet and its in development phase`,
               image: "/x-region.png?height=400&width=600",
-              category: "Commmunication",
+              category: "Startup",
               tech: ["Nextjs", "TypeScript", "GEMINI", "ElevenLabs","More"],
               color: "purple",
             },
+            {
+              title: "MIRACLE TSAKA — PERSONAL PORTFOLIO",
+              description: `A sleek and interactive portfolio website that highlights my journey, skills in full-stack development, AI projects, and design capabilities. It serves as a central hub for my professional profile, featuring my resume, project showcases, and contact links.`,
+              image: "/portfolio.png?height=400&width=600",
+              category: "Portfolio",
+              tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+              color: "indigo",
+            }
+            
            
           ].map((project, index) => (
             <div

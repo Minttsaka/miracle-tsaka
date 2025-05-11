@@ -9,10 +9,6 @@ import {
   Phone,
   MapPin,
   Send,
-  Github,
-  Linkedin,
-  Twitter,
-  Instagram,
   Globe,
   ArrowRight,
   CheckCircle,
@@ -121,10 +117,10 @@ export function ContactSection() {
                   <div>
                     <p className="text-[10px] text-gray-400 mb-1">Email</p>
                     <a
-                      href="mailto:hello@miracletsaka.com"
+                      href="mailto:ebs21-mtsaka@mubas.ac.mw"
                       className="text-xs text-white hover:text-blue-300 transition-colors"
                     >
-                      hello@miracletsaka.com
+                      ebs21-mtsaka@mubas.ac.mw
                     </a>
                   </div>
                 </div>
@@ -136,7 +132,7 @@ export function ContactSection() {
                   <div>
                     <p className="text-[10px] text-gray-400 mb-1">Phone</p>
                     <a href="tel:+11234567890" className="text-xs text-white hover:text-purple-300 transition-colors">
-                      +1 (123) 456-7890
+                      +265998970102
                     </a>
                   </div>
                 </div>
@@ -148,7 +144,7 @@ export function ContactSection() {
                   <div>
                     <p className="text-[10px] text-gray-400 mb-1">Location</p>
                     <p className="text-xs text-white">
-                      San Francisco, CA
+                      Blantyre
                       <span className="block text-[10px] text-gray-400 mt-1">Available for remote work worldwide</span>
                     </p>
                   </div>
@@ -161,60 +157,13 @@ export function ContactSection() {
                   <div>
                     <p className="text-[10px] text-gray-400 mb-1">Website</p>
                     <a
-                      href="https://miracletsaka.com"
+                      href="https://miracletsaka.vercel.app/"
                       className="text-xs text-white hover:text-green-300 transition-colors"
                     >
-                      miracletsaka.com
+                      https://miracletsaka.vercel.app/
                     </a>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            {/* Social links */}
-            <div className="border border-purple-500/20 bg-purple-900/10 backdrop-blur-sm rounded-xl p-6">
-              <h3 className="text-sm font-semibold text-white mb-4">Connect With Me</h3>
-
-              <div className="grid grid-cols-2 gap-4">
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 border border-gray-800 bg-gray-900/30 rounded-lg p-3 hover:border-purple-500/30 hover:bg-purple-900/20 transition-colors"
-                >
-                  <Github className="w-4 h-4 text-gray-400" />
-                  <span className="text-xs text-gray-300">GitHub</span>
-                </a>
-
-                <a
-                  href="https://linkedin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 border border-gray-800 bg-gray-900/30 rounded-lg p-3 hover:border-blue-500/30 hover:bg-blue-900/20 transition-colors"
-                >
-                  <Linkedin className="w-4 h-4 text-gray-400" />
-                  <span className="text-xs text-gray-300">LinkedIn</span>
-                </a>
-
-                <a
-                  href="https://twitter.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 border border-gray-800 bg-gray-900/30 rounded-lg p-3 hover:border-cyan-500/30 hover:bg-cyan-900/20 transition-colors"
-                >
-                  <Twitter className="w-4 h-4 text-gray-400" />
-                  <span className="text-xs text-gray-300">Twitter</span>
-                </a>
-
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 border border-gray-800 bg-gray-900/30 rounded-lg p-3 hover:border-pink-500/30 hover:bg-pink-900/20 transition-colors"
-                >
-                  <Instagram className="w-4 h-4 text-gray-400" />
-                  <span className="text-xs text-gray-300">Instagram</span>
-                </a>
               </div>
             </div>
 
@@ -265,7 +214,7 @@ export function ContactSection() {
                       onChange={handleChange}
                       required
                       className="w-full bg-gray-900/50 border border-gray-800 rounded-lg px-4 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-colors"
-                      placeholder="John Doe"
+                      placeholder="Miracle Tsaka"
                     />
                   </div>
 
@@ -281,7 +230,7 @@ export function ContactSection() {
                       onChange={handleChange}
                       required
                       className="w-full bg-gray-900/50 border border-gray-800 rounded-lg px-4 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-transparent transition-colors"
-                      placeholder="john@example.com"
+                      placeholder="ebs21-mtsaka@mubas.ac.mw"
                     />
                   </div>
                 </div>

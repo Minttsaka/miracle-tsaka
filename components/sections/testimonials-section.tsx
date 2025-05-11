@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import { Quote, Star, ChevronLeft, ChevronRight } from "lucide-react"
 
 type Testimonial = {
@@ -12,67 +11,68 @@ type Testimonial = {
   image: string
   quote: string
   rating: number
-  project: string
+
 }
 
 export function TestimonialsSection() {
   const testimonials: Testimonial[] = [
     {
       id: 1,
-      name: "Alexandra Chen",
-      role: "CEO",
-      company: "NexGen Innovations",
-      image: "/placeholder.svg?height=80&width=80",
+      name: "Dr. Kankuzi",
+      role: "Head of Department, ICT",
+      company: "Malawi University of Science and Technology",
+      image: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png?height=80&width=80",
       quote:
-        "Working with Miracle was transformative for our business. The AI platform he developed has streamlined our operations and increased productivity by 40%. His technical expertise combined with a deep understanding of user experience resulted in a product that exceeded our expectations.",
+        "Miracle Tsaka is one of the most promising students I have encountered in my career. His deep interest in data analysis and relentless pursuit of knowledge have led him to build solutions that not only demonstrate technical brilliance but also solve real-world challenges. ",
       rating: 5,
-      project: "AI-Powered Analytics Dashboard",
+
     },
     {
       id: 2,
-      name: "Marcus Johnson",
-      role: "CTO",
-      company: "EcoSphere Technologies",
-      image: "/placeholder.svg?height=80&width=80",
+      name: "Mr. Kapelemera",
+      role: "Lecturer",
+      company: "Malawi University of Science and Technology",
+      image: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png?height=80&width=80",
       quote:
-        "Miracle's approach to our mobile app development was methodical and innovative. He took the time to understand our vision and translated it into a user-friendly application that has received outstanding feedback from our customers. His attention to detail and commitment to quality are unmatched.",
+        "Miracle has consistently demonstrated exceptional technical and analytical skills in my classes. His work ethic, curiosity, and ability to implement complex concepts into functional tools, especially in python, are truly commendable. I have no doubt he is destined to lead innovation in Malawi and beyond.",
       rating: 5,
-      project: "Sustainable Living Mobile App",
+
     },
     {
       id: 3,
-      name: "Sophia Rodriguez",
-      role: "Creative Director",
-      company: "Visionary Design Studio",
-      image: "/placeholder.svg?height=80&width=80",
+      name: "Mr. M. Phiri",
+      role: "Lecturer",
+      company: "Malawi University of Science and Technology",
+      image: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png?height=80&width=80",
       quote:
-        "The immersive VR experience that Miracle created for our exhibition was nothing short of spectacular. He pushed the boundaries of what we thought was possible and delivered an experience that left our visitors in awe. His creativity and technical prowess are truly remarkable.",
+        "Miracle has shown an impressive ability to merge business understanding with technology. His python projects and portfolio website reflect his growth from a student to a solutions-oriented developer who is passionate about impacting education and communication using cutting-edge technology.",
       rating: 5,
-      project: "Interactive VR Exhibition",
+  
     },
     {
       id: 4,
-      name: "David Kim",
-      role: "Product Manager",
-      company: "FinTech Solutions",
-      image: "/placeholder.svg?height=80&width=80",
+      name: "Mr. Tambala",
+      role: "Lecturer",
+      company: "Malawi University of Science and Technology",
+      image: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png?height=80&width=80",
       quote:
-        "Miracle's redesign of our financial platform transformed a complex system into an intuitive, user-friendly interface. His understanding of both the technical requirements and user needs resulted in a 35% increase in user engagement and a significant reduction in support tickets.",
-      rating: 4,
-      project: "Financial Platform Redesign",
+        "As Miracles lecturer, Ive seen him transition from a curious beginner to a confident developer capable of building complex analysis system using python tools. His initiative in creating applications like the voice conversation app shows his ability to blend innovation with practical impact in education.",
+      rating: 5,
+
     },
     {
       id: 5,
-      name: "Emily Watson",
-      role: "Marketing Director",
-      company: "Global Reach Media",
-      image: "/placeholder.svg?height=80&width=80",
+      name: "Mr. P. Chirwa",
+      role: "Lecturer",
+      company: "Malawi University of Science and Technology",
+      image: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png?height=80&width=80",
       quote:
-        "The interactive data visualization tool that Miracle developed has revolutionized how we present information to our clients. His ability to make complex data accessible and engaging has given us a competitive edge in our industry. A true professional who delivers excellence.",
+        "Miracle is a dedicated and visionary student. His work during the Samsung Innovation Campus and his continued effort in building project for employees analysis show both maturity and exceptional technical growth. He is a true asset to the future of technology in Malawi.",
       rating: 5,
-      project: "Interactive Data Visualization",
+  
     },
-  ]
+  ];
+  
 
   const [activeIndex, setActiveIndex] = useState(0)
   const [animating, setAnimating] = useState(false)
@@ -163,13 +163,6 @@ export function TestimonialsSection() {
                     <div className="flex flex-col items-center md:items-start">
                       {/* Client image */}
                       <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-500/50 mb-4">
-                        <Image
-                          src={testimonials[activeIndex].image || "/placeholder.svg"}
-                          alt={testimonials[activeIndex].name}
-                          width={80}
-                          height={80}
-                          className="object-cover"
-                        />
                       </div>
 
                       {/* Client details */}
@@ -191,10 +184,7 @@ export function TestimonialsSection() {
                       </div>
 
                       {/* Project */}
-                      <div className="text-center md:text-left">
-                        <p className="text-[10px] text-gray-500 uppercase">Project</p>
-                        <p className="text-[10px] text-purple-400">{testimonials[activeIndex].project}</p>
-                      </div>
+                      
                     </div>
                   </div>
 
@@ -264,13 +254,6 @@ export function TestimonialsSection() {
                 {/* Client info */}
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 rounded-full overflow-hidden border border-purple-500/30">
-                    <Image
-                      src={testimonial.image || "/placeholder.svg"}
-                      alt={testimonial.name}
-                      width={40}
-                      height={40}
-                      className="object-cover"
-                    />
                   </div>
                   <div>
                     <h4 className="text-xs font-medium text-white">{testimonial.name}</h4>
@@ -283,25 +266,6 @@ export function TestimonialsSection() {
             ))}
         </div>
 
-        {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-          {[
-            { label: "Satisfied Clients", value: "50+" },
-            { label: "Projects Completed", value: "120+" },
-            { label: "Success Rate", value: "98%" },
-            { label: "Years Experience", value: "8+" },
-          ].map((stat, index) => (
-            <div
-              key={index}
-              className="border border-gray-800 bg-gray-900/20 backdrop-blur-sm rounded-xl p-6 text-center"
-            >
-              <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-500">
-                {stat.value}
-              </div>
-              <p className="text-[10px] text-gray-400 mt-1">{stat.label}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   )

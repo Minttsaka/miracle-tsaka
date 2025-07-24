@@ -12,7 +12,9 @@ import {
   Zap,
   Star,
   Download,
+  Facebook,
 } from "lucide-react"
+import VideoLaunchModal from "./launch"
 
 export function ExperienceSection() {
   return (
@@ -84,6 +86,7 @@ export function ExperienceSection() {
                   "Learned modern web development tools and best practices",
                   "Built foundational projects to apply and solidify my skills",
                 ],
+                socialLaunch: null,
                 technologies: ["HTML", "CSS", "JavaScript", "React"],
                 color: "gray",
                 logo: "/mint.jpg?height=80&width=80",
@@ -99,11 +102,29 @@ export function ExperienceSection() {
                   "Developed several personal and client-facing web apps",
                   "Gained expertise in frameworks like Next.js and tools like Docker",
                 ],
+                socialLaunch: null,
                 technologies: ["Node.js", "Next.js", "TypeScript", "Docker"],
                 color: "blue",
                 logo: "/mint.jpg?height=80&width=80",
               },
-              {
+                  {
+                  period: "2023",
+                  role: "Full Stack Developer & Project Lead",
+                  company: "Polyhuwa (e-commerce platform)",
+                  location: "Malawi",
+                  description:
+                    "Contributed as a core team member in building Polyhuwa, a local e-commerce platform designed to simplify online buying and selling in Malawi. I was responsible for both frontend and backend development, and led the implementation of essential features such as product listings, user accounts, checkout flow, and payment integration. Although the platform is no longer active, it laid the groundwork for local digital commerce initiatives. During this time, During launching other innovators like Excess, the founder of Mikoz, participated together with the dean of students.",
+                  achievements: [
+                    "Developed and launched a fully functional e-commerce site from scratch",
+                    "Integrated secure payment processing and order tracking system",
+                    "Collaborated with designers and testers to ensure mobile-friendly UI/UX",
+                  ],
+                  technologies: ["Next.js", "Node.js", "MongoDB", "Tailwind CSS"],
+                  color: "green",
+                  logo: "/mint.jpg?height=80&width=80",
+                  socialLaunch: "https://web.facebook.com/groups/1415924682019722/?multi_permalinks=3548032765475559&hoisted_section_header_type=recently_seen"
+                }
+                ,{
                 period: "2023 - 2024",
                 role: "AI Developer",
                 company: "Independent + OpenAI Tools",
@@ -117,6 +138,7 @@ export function ExperienceSection() {
                 ],
                 technologies: ["OpenAI", "Python", "TensorFlow", "OpenCV"],
                 color: "green",
+                socialLaunch: null,
                 logo: "/mint.jpg?height=80&width=80",
               },
               {
@@ -124,6 +146,7 @@ export function ExperienceSection() {
                 role: "AI & ML Engineer (Trainee)",
                 company: "Samsung Innovation Campus",
                 location: "Malawi",
+                socialLaunch: null,
                 description:
                   "Focused on machine learning, advanced data analysis, and AI technologies as part of the Samsung Innovation Campus program. Excelled in applying theoretical knowledge to real-world problems and projects.",
                 achievements: [
@@ -135,18 +158,19 @@ export function ExperienceSection() {
                 logo: "/mint.jpg?height=80&width=80",
               },
               {
-                period: "2025 - Present",
-                role: "Founder & AI Product Lead",
+                period: "2024 - 2025",
+                role: "Fullstack developer & AI Product Lead at xtremeregion",
                 company: "Extreme Region",
+                socialLaunch: "video",
                 location: "Malawi",
                 description:
-                  "Co-founded Extreme Region, an AI-powered educational and video conferencing platform aimed at transforming online learning and collaboration in Africa. Spearheading the development of scalable AI solutions and product vision.",
+                  "Software developer at Extreme Region, an AI-powered educational, communication and video conferencing platform aimed at transforming online learning, management and collaboration in Africa. Spearheading the development of scalable AI solutions and product vision.",
                 achievements: [
-                  "Develop Extreme Region with AI-driven video meetings and lesson creation",
-                  "Enabled monetization for educators via user-subscription channels",
+                  "Develop Xtreme Region with AI-driven video meetings and lesson creation",
+                  "Enabled monetization for educators via user-subscription channels using airtel money and tnm mpamba. ont forget about visa card.",
                   "Integrated meeting scheduling, AI chatbots, and real-time voice features",
                 ],
-                technologies: ["AI/ML", "OpenAI", "AWS", "Next.js", "WebRTC"],
+                technologies: ["AI/ML", "OpenAI", "AWS", "Next.js", "WebRTC", "Agora", "ElevenLabs"],
                 color: "orange",
                 logo: "/mint.jpg?height=80&width=80",
               },
@@ -173,6 +197,15 @@ export function ExperienceSection() {
                           <div className="flex items-center mt-1">
                             <Building className="w-3 h-3 text-gray-400 mr-1" />
                             <span className="text-xs text-gray-300">{experience.company}</span>
+                            {experience.socialLaunch &&<a
+                              href={experience.socialLaunch}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center hover:border-blue-500 hover:bg-blue-900/10 transition-colors"
+                              aria-label="Facebook"
+                            >
+                              <Facebook className="w-3 h-3 text-gray-400" />
+                            </a>}
                           </div>
                           <div className="flex items-center mt-1">
                             <MapPin className="w-3 h-3 text-gray-400 mr-1" />
@@ -223,6 +256,13 @@ export function ExperienceSection() {
                         </div>
                       </div>
 
+                      {
+                        experience.socialLaunch === "video" && (
+                          <VideoLaunchModal />
+                        )
+
+                      }
+
                       {/* Link to project or more details */}
                       {index === 0 && (
                         <div className="mt-4 pt-4 border-t border-gray-800">
@@ -263,9 +303,9 @@ export function ExperienceSection() {
                   {
                     degree: "Education (Business studies)",
                     institution: "MUBAS",
-                    period: "2021 - 2025",
+                    period: "2022 - 2025",
                     description:
-                      "System analysis, organization behaviour, and coding.",
+                      "Business and computer studies",
                   },
                   
                 ].map((edu, index) => (

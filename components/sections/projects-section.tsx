@@ -171,20 +171,25 @@ export function ProjectsSection() {
             {
               title: "XTREME-REGION STARTUP",
               description:
-                `I developed the fontend and intergated ai functionalities to this startup web app.Extreme Region empowers organizations with AI-driven video conferencing and educational tools, enabling seamless 
-                online meetings and dynamic lesson creation to enhance collaboration and knowledge sharing. The platform also allows 
-                teachers to create dedicated channels where users can subscribe, having realtime voice chat with ai for learning purpose, offering a powerful way to monetize expertise and build 
-                an engaged learning community. Its not deployed yet and its in development phase`,
+                `I played a key role as a Tech Leader in the development of Extreme Region, a startup web application focused on empowering organizations with AI-driven video conferencing and educational tools. As part of a talented team, I contributed to both the frontend and backend development, as well as the database management system.
+
+The platform facilitates seamless online meetings, dynamic lesson creation, and enhances collaboration through AI functionalities. A standout feature allows teachers to create dedicated channels, where users can subscribe for real-time voice chats with AI for interactive learning. This fosters both a scalable monetization model for educators and a vibrant learning community.
+
+In addition, I helped introduce a comprehensive national management system designed to address the unique challenges faced by educational institutions across Africa. The system aims to streamline administrative processes and ensure a seamless experience for both educators and students.
+
+Now that my role in this development phase is complete, Im eager to bring my technical expertise and leadership skills to a new challenge.`,
               image: "/x-region.png?height=400&width=600",
               category: "Startup",
               tech: ["Nextjs", "TypeScript", "GEMINI", "ElevenLabs","More"],
               color: "purple",
+              link:"https://xtremeregion.com",
             },
             {
               title: "MIRACLE TSAKA — PERSONAL PORTFOLIO",
               description: `A sleek and interactive portfolio website that highlights my journey, skills in full-stack development, AI projects, and design capabilities. It serves as a central hub for my professional profile, featuring my resume, project showcases, and contact links.`,
               image: "/portfolio.png?height=400&width=600",
               category: "Portfolio",
+              link:"/",
               tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
               color: "indigo",
             }
@@ -218,7 +223,16 @@ export function ProjectsSection() {
                 {/* Quick view button */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <button className="bg-black/70 backdrop-blur-sm border border-white/20 rounded-full w-10 h-10 flex items-center justify-center text-white hover:bg-white/10 transition-colors">
+                    
+                    <div className="flex items-center space-x-4">
+                  <Link
+                    href={project.link}
+                    target="__blank"
+                    className="inline-flex items-center text-xs text-gray-400 hover:text-cyan-300 transition-colors"
+                  >
                     <Eye className="w-4 h-4" />
+                  </Link>
+                </div>
                   </button>
                 </div>
               </div>
@@ -235,6 +249,17 @@ export function ProjectsSection() {
                       {tech}
                     </span>
                   ))}
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <Link
+                    href={project.link}
+                    target="__blank"
+                    className="inline-flex items-center text-xs text-gray-400 hover:text-cyan-300 transition-colors"
+                  >
+                    <ExternalLink className="w-3 h-3 mr-1" />
+                    Live Demo
+                  </Link>
                 </div>
 
                 {/* Actions */}

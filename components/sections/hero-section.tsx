@@ -85,7 +85,7 @@ export function HeroSection() {
 
           {/* Title */}
           <p className="text-xs sm:text-sm tracking-wider text-gray-400 max-w-xl mx-auto lg:mx-0">
-            DIGITAL GIANT • FUTURE ENGINEER • INNOVATION SPECIALIST
+            DIGITAL GIANT • SOFTWARE ENGINEER • INNOVATION SPECIALIST
           </p>
 
           {/* Description */}
@@ -97,8 +97,8 @@ export function HeroSection() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-2 pt-4">
             <div className="border border-purple-500/20 bg-purple-500/5 rounded-md p-2">
-              <div className="text-xs text-purple-300">Projects</div>
-              <div className="text-xl font-bold">3+</div>
+              <div className="text-xs text-purple-300">Lead Projects</div>
+              <div className="text-xl font-bold">2+</div>
             </div>
             <div className="border border-blue-500/20 bg-blue-500/5 rounded-md p-2">
               <div className="text-xs text-blue-300">Experience</div>
@@ -132,7 +132,7 @@ export function HeroSection() {
           <div className="pt-4">
             <p className="text-[10px] text-gray-500 mb-2">TECH STACK</p>
             <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
-              {["React", "Next.js", "TypeScript", "Node.js", "Python", "AWS", "AI/ML"].map((tech) => (
+              {["React", "Next.js", "TypeScript", "Node.js", "Python", "AWS", "AI/ML","More advanced technologies"].map((tech) => (
                 <span key={tech} className="text-[10px] px-2 py-1 rounded-full bg-gray-800 text-gray-400">
                   {tech}
                 </span>

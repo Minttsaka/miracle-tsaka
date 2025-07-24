@@ -21,7 +21,7 @@ export function TestimonialsSection() {
       name: "Dr. Kankuzi",
       role: "Head of Department, ICT",
       company: "Malawi University of Science and Technology",
-      image: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/3_avatar-512.png?height=80&width=80",
+      image: "/kankudzi.jpg?height=80&width=80",
       quote:
         "Miracle Tsaka is one of the most promising students I have encountered in my career. His deep interest in data analysis and relentless pursuit of knowledge have led him to build solutions that not only demonstrate technical brilliance but also solve real-world challenges. ",
       rating: 5,

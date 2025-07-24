@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowUp, Github, Linkedin, Twitter, Instagram } from "lucide-react"
+import { ArrowUp, Github, Linkedin, Facebook } from "lucide-react"
 
 export function FooterSection() {
   const currentYear = new Date().getFullYear()
@@ -30,7 +30,7 @@ export function FooterSection() {
             </p>
             <div className="flex space-x-3">
               <a
-                href="https://github.com"
+                href="https://github.com/Minttsaka/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center hover:border-purple-500 hover:bg-purple-900/10 transition-colors"
@@ -39,7 +39,7 @@ export function FooterSection() {
                 <Github className="w-3 h-3 text-gray-400" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/in/miracle-tsaka/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center hover:border-blue-500 hover:bg-blue-900/10 transition-colors"
@@ -48,23 +48,15 @@ export function FooterSection() {
                 <Linkedin className="w-3 h-3 text-gray-400" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://web.facebook.com/mint.tsakah"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center hover:border-cyan-500 hover:bg-cyan-900/10 transition-colors"
-                aria-label="Twitter"
+                className="w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center hover:border-blue-500 hover:bg-blue-900/10 transition-colors"
+                aria-label="Facebook"
               >
-                <Twitter className="w-3 h-3 text-gray-400" />
+                <Facebook className="w-3 h-3 text-gray-400" />
               </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full border border-gray-800 flex items-center justify-center hover:border-pink-500 hover:bg-pink-900/10 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-3 h-3 text-gray-400" />
-              </a>
+
             </div>
           </div>
         </div>

@@ -95,7 +95,7 @@ export function AboutSection() {
             <div>
               <h3 className="text-sm font-semibold text-purple-400 mb-2">The Journey</h3>
               <p className="text-xs leading-relaxed text-gray-300">
-                I am Miracle Tsaka, a digital architect and future engineer with a passion for creating innovative
+                I am Miracle Tsaka, a digital architect and software engineer with a passion for creating innovative
                 solutions that bridge the gap between technology and human experience. With over 2 years of experience
                 in the tech industry, Ive dedicated my career to pushing the boundaries of whats possible in digital
                 design and development.
